@@ -1,6 +1,6 @@
 {
     "name": "storybook-watcher",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "index.js",
     "bin": {
@@ -24,7 +24,7 @@
     "bugs": {
         "url": "https://github.com/an1lsalan/storybook-watcher/issues?q=is%3Aissue"
     },
-    "homepage": "https://github.com/DEIN_BENUTZERNAME/storybook-path-watcher#readme",
+    "homepage": "https://github.com/an1lsalan/storybook-watcher#readme",
     "dependencies": {
         "@babel/generator": "^7.20.0",
         "@babel/traverse": "^7.20.0",
