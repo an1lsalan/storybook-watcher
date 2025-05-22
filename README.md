@@ -1,18 +1,17 @@
-# storybook-path-watcher
+## Konfiguration per Kommandozeile
 
-Ein Watcher, der automatisch Storybook-Stories für deine React/Next.js-Komponenten erstellt, aktualisiert und löscht.
+Du kannst das Verhalten des Watchers mit folgenden Optionen anpassen:
 
-## Features (Beispiel)
+| Option                         | Alias | Beschreibung                                                                    | Standardwert                                  |
+| ------------------------------ | ----- | ------------------------------------------------------------------------------- | --------------------------------------------- |
+| `--componentsDir <pfad>`       | `-c`  | Pfad zum Komponentenverzeichnis (relativ zum Projekt)                           | `src/components`                              |
+| `--storiesDir <pfad>`          | `-s`  | Pfad zum Stories-Verzeichnis (relativ zum Projekt). Wenn nicht gesetzt, dynamisch | Dynamisch (`src/stories` oder `stories`)      |
+| `--componentExts <exts>`       | `-e`  | Komma-separierte Liste von Komponenten-Endungen (z.B. ".tsx,.jsx")              | `.tsx,.jsx`                                   |
+| `--storyExt <ext>`             | `-x`  | Dateiendung für generierte Story-Dateien                                        | `.stories.tsx`                                |
+| `--defaultStoryName <name>`    | `-n`  | Name des Standard-Story-Exports                                                 | `Default`                                     |
+| `--help`                       | `-h`  | Zeigt diese Hilfe an                                                            |                                               |
 
--   Überwacht dein Komponentenverzeichnis auf Änderungen.
--   Erstellt automatisch Basis-Story-Dateien für neue Komponenten.
--   Extrahiert Props (aus TypeScript) und fügt sie als `args` in die Stories ein.
--   Aktualisiert `args` bei Änderungen an den Komponenten-Props.
--   Löscht zugehörige Stories, wenn Komponenten entfernt werden.
--   Farbige Konsolenausgaben für bessere Lesbarkeit.
+**Beispiel:**
 
-## Installation
-
-Global (um den Befehl `sb-watch` überall verfügbar zu machen):
 ```bash
-npm install -g storybook-path-watcher
+sb-watch -c ./app/ui -s ./app/storybook-files -e .tsx,.vue -x .stories.js -n BaseStory
