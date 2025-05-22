@@ -1,0 +1,29 @@
+{
+    "name": "storybook-watcher",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "bin": {
+        "sb-watch": "./bin/sb-watch.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "storybook",
+        "watcher",
+        "generator",
+        "nextjs",
+        "react",
+        "automation"
+    ],
+    "author": "Anil Can Salan anilsalan@gmx.de",
+    "license": "MIT",
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "files": [
+        "bin",
+        "README.md"
+    ]
+}
